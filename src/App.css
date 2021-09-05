@@ -1,38 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+}
+
 .App {
-  text-align: center;
+  width: 60%;
+  margin: 40px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.description {
+  font-size: 1.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.genres {
+  margin-top: 30px;
+  display: flex;
+}
+
+.genres .genre {
+  /* width: 50px; */
+  background: cyan;
+  padding: 15px 30px;
+  margin: 0 10px;
+  border-radius: 20px;
+}
+
+.options {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.options .option {
+  border: 1px solid lightgrey;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.options .option .song-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.options .option .artist-name {
+  margin-bottom: 10px;
+}
+.options .option .player {
 }
