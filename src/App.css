@@ -6,11 +6,20 @@
 
 body {
   font-family: "Cabin", sans-serif;
+  background: url("./images/joanna-kosinska-78uNJt1kPw8-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App {
   width: 60%;
   margin: 40px auto;
+}
+
+.selected {
+  background: white;
+  color: black;
+  box-shadow: 0 0 20px coral;
 }
 
 .title {
@@ -29,10 +38,26 @@ body {
 
 .genres .genre {
   /* width: 50px; */
-  background: cyan;
+  background: #ff7b54;
   padding: 15px 30px;
   margin: 0 10px;
   border-radius: 20px;
+  transition: 0.3s;
+}
+.genres .genre:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px black;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.intro .intro-genre {
+  color: coral;
+  font-weight: bold;
 }
 
 .options {
@@ -41,10 +66,14 @@ body {
 }
 
 .options .option {
-  border: 1px solid lightgrey;
+  border: 1px solid lightslategray;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 20px;
+  transition: 0.3s;
+}
+.options .option:hover {
+  box-shadow: 0 0 20px coral;
 }
 
 .options .option .song-name {
@@ -54,6 +83,7 @@ body {
 .options .option .artist-name {
   margin-bottom: 10px;
 }
+
 .options .option .player {
 }
 
@@ -82,6 +112,6 @@ body {
   padding: 0.5rem;
 }
 .social .fab:hover {
-  background-color: white;
+  background-color: coral;
   cursor: pointer;
 }

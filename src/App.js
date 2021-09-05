@@ -28,6 +28,12 @@ function App() {
         <hr></hr>
         <br />
       </div>
+      <div className="intro">
+        <p>
+          Here are my favourite{" "}
+          <span className="intro-genre">{genre.toUpperCase()}</span> music!
+        </p>
+      </div>
 
       <div className="options">
         {musicData[genre].map((song) => {
