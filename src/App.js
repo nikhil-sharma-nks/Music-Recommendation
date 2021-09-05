@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="title">Musicomato</div>
-        <div className="description">Listen to my favourite kind of music</div>
+        <div className="description">Listen to my favourite kind of music.</div>
         <div className="genres">
           {Object.keys(musicData).map((genreInData) => {
             return (
