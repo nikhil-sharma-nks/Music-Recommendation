@@ -41,6 +41,7 @@ function App() {
             <div className="option">
               <div className="song-name">{song.name}</div>
               <div className="artist-name">{song.artist}</div>
+              <div className="rating">Rating: {song.rating}</div>
               <div className="player">
                 <iframe
                   src={song.spotify}
